@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+
+        <RelativeLayout
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/User_image"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="3dp"
+                android:src="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/User_image"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/txtname"
+                                android:layout_width="100dp"
+                                android:textColor="@android:color/black"
+                                android:layout_height="30dp"
+                                android:text="Name : " />
+
+                            <TextView
+                                android:textColor="@android:color/black"
+                                android:id="@+id/User_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_toRightOf="@+id/txtname"
+                                android:text="shekhar" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/line2"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/line1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/txtGroup"
+                                android:textColor="@android:color/black"
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:text="Blood Group : " />
+
+                            <TextView
+                                android:id="@+id/User_Group"
+                                android:layout_width="match_parent"
+                                android:textColor="@android:color/black"
+                                android:layout_height="30dp"
+                                android:layout_toRightOf="@+id/txtGroup"
+                                android:text="o+" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/line3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/line2"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/txtAddress"
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"
+                                android:textColor="@android:color/black"
+                                android:text="Address : " />
+
+                            <TextView
+                                android:textColor="@android:color/black"
+                                android:id="@+id/User_Address"
+                                android:lines="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_toRightOf="@+id/txtAddress"
+                                android:scrollbars="vertical"
+                                android:scrollbarFadeDuration="1"
+                                android:text="D 108-c Vidya Vihar Bits Pliani Campus Rajasthan 333031" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

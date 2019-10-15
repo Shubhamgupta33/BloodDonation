@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Searched_People">
+
+    <include
+        android:id="@+id/dv1"
+        layout="@layout/top_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="35dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="9dp"
+
+        android:src="@drawable/ic_arrow"/>
+    <TextView
+        android:layout_toRightOf="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Donors"
+        android:textSize="20dp"
+        android:layout_marginTop="4dp"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_background"
+        android:layout_below="@id/dv1">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/Error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="50dp"
+        android:visibility="invisible" />
+</RelativeLayout>

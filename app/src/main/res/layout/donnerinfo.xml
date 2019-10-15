@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="334dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/User_image"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@android:color/black" />
+
+
+            <TextView
+                android:id="@+id/User_name"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/User_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="shekhar"
+                android:textAlignment="center"
+                android:textColor="@android:color/black" />
+
+
+            <TextView
+                android:id="@+id/User_Group"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/User_name"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="10dp"
+                android:text="o+"
+                android:textAlignment="center"
+                android:textColor="@android:color/black" />
+
+
+            <TextView
+                android:id="@+id/User_Address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/User_Group"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/txtAddress"
+                android:scrollbars="horizontal|vertical"
+                android:text="ndfndsfjsd"
+                android:textAlignment="center"
+                android:textColor="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/User_Address"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/CallToUser"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="54dp"
+                    android:background="@drawable/call_btn"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_call_black_24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/MassageToUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/btn_message"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_message_black_24dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
